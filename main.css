@@ -4,12 +4,118 @@ body,
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+ul > li {
+  list-style: none;
 }
 
 body {
-  background-color: purple;
+  background: linear-gradient(
+    341deg,
+    #100429 50%,
+    rgba(44, 4, 130, 0.39) 103.92%
+  );
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  align-items: center;
 }
 
-#black-hole {
+header {
+  max-width: 1200px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 500px;
+  max-width: 1200px;
+}
+
+.navbar {
+  padding: 1rem;
+  max-width: 1200px;
+}
+
+.navbar > ul {
+  display: flex;
+  width: 900px;
+  justify-content: space-between;
+}
+
+.planet {
+  width: 120px;
+  height: 120px;
   background-color: #100429;
+  border-radius: 50%;
+}
+
+.black-hole {
+  position: relative;
+  display: grid;
+  justify-items: center;
+}
+
+.circle__black_hole {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 6px solid #bd7131;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #fff 0%,
+    #faf9f5 26.04%,
+    #f1eee4 69.89%,
+    #e7e3d0 75.45%,
+    #f1eddc 79.17%,
+    #efd29c 89.06%,
+    #d6af7c 93.23%,
+    #c88342 98.47%
+  );
+  filter: drop-shadow(0px 10px 4px #000);
+}
+
+.circle__black_hole::before {
+  content: "";
+  position: absolute;
+  top: calc(100px - 56px - 6px);
+  left: calc(100px - 56px - 6px);
+  width: 112px;
+  height: 112px;
+  border: solid 6px #fff;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.circle__black_hole::after {
+  content: "";
+  position: absolute;
+  top: calc(100px - 44px - 4px);
+  left: calc(100px - 44px - 4px);
+  width: 84px;
+  height: 84px;
+  border: solid 4px #fff;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.ring {
+  position: absolute;
+  width: 400px;
+  height: 180px;
+  top: 50px;
+  left: 60px;
+  border-radius: 50%;
+  /* border-left: 0; */
+  transform: rotate(330deg);
+  box-shadow: 0px 0px 0px 1px #eaa879, -20px 0px 0px 1px #eaa879,
+    20px -1px 0px 0px #eaa879, inset 9px 3px 0px #c7a790,
+    inset -6px -5px 0 1px #ca8d61, inset -30px 0 10px 5px #ddc59c,
+    inset 20px 0 10px 5px #e8fbe5, inset 30px 0 10px 10px #ddd7c9,
+    inset 50px 0 10px 5px #b4b0a4, inset 60px 0px 10px 5px #e8fbe5,
+    inset -50px 0px 10px 5px #c9c2b1, inset -60px 0px 10px 5px #c9d2d8;
 }
