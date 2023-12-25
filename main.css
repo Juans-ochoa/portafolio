@@ -1,0 +1,15 @@
+body,
+::after,
+::before,
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: purple;
+}
+
+#black-hole {
+  background-color: #100429;
+}
