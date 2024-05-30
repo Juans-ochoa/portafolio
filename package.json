@@ -1,0 +1,23 @@
+{
+  "name": "juanse-ochoa",
+  "version": "1.0.0",
+  "description": "This is my portfolio",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juans-ochoa/portafolio.git"
+  },
+  "keywords": [
+    "Juanse",
+    "Potfolio"
+  ],
+  "author": "Juanse Ochoa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Juans-ochoa/portafolio/issues"
+  },
+  "homepage": "https://github.com/Juans-ochoa/portafolio#readme"
+}

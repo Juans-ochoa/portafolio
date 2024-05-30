@@ -7,30 +7,59 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <ul>
-          <li class="planet">Inicio</li>
-          <li class="planet">Proyectos</li>
-          <li class="planet">About me</li>
-          <li class="planet">Cantact me</li>
-        </ul>
-      </nav>
+    <header class="header">
+      <ul class="navbar">
+        <li class="item">
+          <a class="inicio active" href="#inicio">Inicio</a>
+        </li>
+        <li class="item">
+          <a href="#experiencia" class="experiencia" id="experiencia"
+            >Experiencia</a
+          >
+        </li>
+        <li class="item">
+          <a href="#contacto" class="contacto" id="contacto">Contacto</a>
+        </li>
+      </ul>
     </header>
-    <main>
-      <section>
-        <h1>Juan Sebastián Ochoa</h1>
-        <h3>Frontend Developer</h3>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex
-          repellendus sit similique quam eos amet vitae corporis dolorum id
-          harum.
-        </p>
+    <span class="effect-circle"></span>
+    <main class="content">
+      <section class="inicio" id="inicio">
+        <article class="informacion">
+          <h3>Desarrollador Fronted</h3>
+          <h1 class="title">Juan Sebastián Ochoa</h1>
+          <p>
+            Soy desarrollador web front-end con más de 4 años de experiencia
+            trabajando con Next.js, React.js, Sass, y HTML5, especializado en
+            crear interfaces eficientes y atractivas. Manejo metodologías ágiles
+            como Scrum y destaco por mi resiliencia, adaptabilidad y
+            responsabilidad. enfoque colaborativo me permite trabajar
+            efectivamente con equipos multidisciplinarios para alcanzar metas y
+            superar expectativas.
+          </p>
+          <h5>Intereses</h5>
+          <ul>
+            <li>Inteligencia artificial</li>
+            <li>Diseño UI/UX</li>
+            <li>Practicar Running</li>
+            <li>Inteligencia artificial</li>
+          </ul>
+          <p>
+            “El hombre conquista el mundo al conquistarse a sí mismo”
+            <span>Zenón de Citio</span>
+          </p>
+        </article>
+        <div class="rectangulo">
+          <span class="efecto"></span>
+          <img src="/img/photo.jpg" loading="lazy" alt="Profile" />
+        </div>
       </section>
-      <article class="black-hole">
-        <div class="ring"></div>
-        <div class="circle__black_hole"></div>
-      </article>
+      <section class="experiencia" id="experiencia">
+        <h3>Experiencia</h3>
+      </section>
+      <section class="contacto" id="contacto">
+        <h3>Contactame</h3>
+      </section>
     </main>
     <footer>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sapiente
