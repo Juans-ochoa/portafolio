@@ -4,9 +4,108 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="./common.css" />
+    <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
+    <nav class="flex justify-center align-center navbar-mobile">
+      <ul class="flex gap-2 justify-between">
+        <li class="active">
+          <a class="flex flex-col gap-1 align-center" href="#home">
+            <img
+              src="/public/assets/icons/home.svg"
+              width="24"
+              height="24"
+              alt="Icon home"
+            />
+            <p class="text-white font-semibold">Home</p>
+          </a>
+        </li>
+        <li>
+          <a class="flex flex-col gap-1 align-center" href="#experience">
+            <img
+              src="/public/assets/icons/hierarchy.svg"
+              width="24"
+              height="24"
+              alt=""
+            />
+            <p class="text-white font-semibold">Experience</p>
+          </a>
+        </li>
+        <li>
+          <a class="flex flex-col gap-1 align-center" href="#projects">
+            <img
+              src="/public/assets/icons/console.svg"
+              width="24"
+              height="24"
+              alt=""
+            />
+            <p class="text-white font-semibold">Projects</p>
+          </a>
+        </li>
+        <li>
+          <a class="flex flex-col gap-1 align-center" href="#contact-me">
+            <img
+              src="/public/assets/icons/message.svg"
+              width="24"
+              height="24"
+              alt=""
+            />
+            <p class="text-white font-semibold">Contact</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <aside class="aside-navbar">
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a class="item-nav selected" href="#home">
+              <img
+                src="/public/assets/icons/home.svg"
+                width="24"
+                height="24"
+                alt=""
+              />
+              <p class="text">Home</p>
+            </a>
+          </li>
+          <li>
+            <a class="item-nav" href="#experience">
+              <img
+                src="/public/assets/icons/hierarchy.svg"
+                width="24"
+                height="24"
+                alt=""
+              />
+              <p class="text">Experience</p>
+            </a>
+          </li>
+          <li>
+            <a class="item-nav" href="#projects">
+              <img
+                src="/public/assets/icons/console.svg"
+                width="24"
+                height="24"
+                alt=""
+              />
+              <p class="text">Projects</p>
+            </a>
+          </li>
+          <li>
+            <a class="item-nav" href="#contact-me">
+              <img
+                src="/public/assets/icons/message.svg"
+                width="24"
+                height="24"
+                alt=""
+              />
+              <p class="text">Contact me</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
     <main>
       <section id="home">
         <div class="image-profile">
@@ -239,57 +338,6 @@
     <div class="bg-blob-3"></div>
     <div class="bg-image-1"></div>
     <div class="bg-image-2"></div>
-
-    <aside class="aside-navbar">
-      <nav class="navbar">
-        <ul>
-          <li>
-            <a class="item-nav selected" href="#home">
-              <img
-                src="/public/assets/icons/home.svg"
-                width="24"
-                height="24"
-                alt=""
-              />
-              <p class="text">Home</p>
-            </a>
-          </li>
-          <li>
-            <a class="item-nav" href="#experience">
-              <img
-                src="/public/assets/icons/hierarchy.svg"
-                width="24"
-                height="24"
-                alt=""
-              />
-              <p class="text">Experience</p>
-            </a>
-          </li>
-          <li>
-            <a class="item-nav" href="#projects">
-              <img
-                src="/public/assets/icons/console.svg"
-                width="24"
-                height="24"
-                alt=""
-              />
-              <p class="text">Projects</p>
-            </a>
-          </li>
-          <li>
-            <a class="item-nav" href="#contact-me">
-              <img
-                src="/public/assets/icons/message.svg"
-                width="24"
-                height="24"
-                alt=""
-              />
-              <p class="text">Contact me</p>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </aside>
     <script src="/public/main.js"></script>
   </body>
 </html>
